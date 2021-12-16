@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div  class="container">
+      <form action="" method="get">
+        <header>
+          <h1  class="header">Payment form</h1>
+          
+        </header>
+        <section class="content-section">
+          <h2 class="section-header">Contact information</h2>
+          <p class="information" >* are required fields.</p>
+          <div class="item">
+           <div class="item-name">Name: *</div>            
+            <input class ="input"type="text" name="Name" required placeholder="Ayush Mittal" >
+          </div>
+          <div class="item">
+          <fieldset>
+            <legend class="item-name">Gender</legend>
+            <span>Male: <input type="radio" name="Gender" id="male" /> </span>
+            <span>Female: <input type="radio" name="Gender" id="female" /></span>
+            
+          </fieldset>
+        </div>
+        
+          <div class="item">
+            <div class="item-name">Address:</div>
+            <div><textarea class ="input"
+              name="Add"
+              id="adress"
+              cols="50"
+              rows="7"
+              placeholder="Enter Your Address Here "
+            ></textarea>
+            </div>
+          </div>
+          
+          <div class="item">
+            <div class="item-name">Email:</div>
+            <input class ="input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@xyz.com"
+            />
+          </div>
+          <div class="item">
+            <div class="item-name">Pincode:</div>
+            
+            <input class ="input"
+              type="number"
+              name="Pincode"
+              id="Pincode"
+              placeholder="112233"
+            >
+          </div>
+          </section>
+          
+          <section class="content-section">
+          <h2 class="section-header">Payment Details</h2>
+          <div class="item">
+            <div class="item-name">Card Type:</div>
+            <select name="card_type" id="card_type">
+              <option class="select-option"value="">--Select a card type--</option>
+              <option class="select-option" value="Visa">Visa</option>
+              <option class="select-option" value="Rupay">Rupay</option>
+              <option  class="select-option"value="MasterCard">MasterCard</option>
+              <option class="select-option" value="American Express">American Express</option>
+            </select>
+          </div>
+          <div class="item">
+            <div class="item-name">Card Number</div>
+            <input class ="input"
+              type="number"
+              name="card_num"
+              id="card_num"
+              placeholder="1111-2222-3333-4444"
+            />
+          </div>
+          <div class="item">
+            <div class="item-name"> Expiry Date</div>
+            <input class ="input" type="date" name="expiry_date" id="expiry_date" />
+          </div>
+          <div class="item">
+            <div class="item-name">CVV </div>
+            <input class ="input" type="password" id="cvv" name="cvv" placeholder="000" />
+          </div>
+        </section>
+          <footer class="main-footer">
+            <input  type="submit" value="Pay Now" />
+            <button  class="btn" type="reset">Reset</button>
+          </footer>
+        
+      </form>
+    </div>
+  </body>
+</html>
